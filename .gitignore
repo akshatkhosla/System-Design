@@ -1,0 +1,12 @@
+# Compiled binaries
+SOLID/*_followed
+SOLID/*_violated
+Design Pattern/**/*_pattern
+*.out
+*.o
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
