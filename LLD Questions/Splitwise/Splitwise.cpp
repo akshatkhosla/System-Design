@@ -473,7 +473,10 @@ public:
     void printSimplifiedDebts() const {
         auto txns = simplifyDebts();
         cout << "\n── Simplified debts for group '" << name << "' ──\n";
-        if (txns.empty()) { cout << "  Nothing to settle!\n"; return; }
+        if (txns.empty()) { 
+            cout << "  Nothing to settle!\n"; 
+            return; 
+        }
         for (auto& [from, to, amount] : txns)
             cout << "  " << from.getName() << " → " << to.getName()
                  << " ₹" << amount << "\n";
